@@ -1,0 +1,38 @@
+[
+    {
+        "name": "2023년 회고",
+        "description": "2023년 동안 잘한 일, 잘못한 일들",
+        "date": "2023-12-31",
+        "image": "review.jpg"
+    },
+    {
+        "name": "백엔드 개발자",
+        "description": "백엔드 개발자의 역할 및 범위",
+        "date": "2023-11-31",
+        "image": "backend.jpg"
+    },
+    {
+        "name": "HTML이란 무엇인가",
+        "description": "HTML의 정의 및 등장 배경",
+        "date": "2023-10-31",
+        "image": "html.jpg"
+    },
+    {
+        "name": "Javascript의 ES6 추가된 것",
+        "description": "Javascript의 ES5 와 ES6의 차이점",
+        "date": "2023-9-31",
+        "image": "js.jpg"
+    },
+    {
+        "name": "좋은 노트북은?",
+        "description": "노트북을 구매하기 전 고려해야 할 것",
+        "date": "2023-08-31",
+        "image": "laptop.jpg"
+    },
+    {
+        "name": "리액트가 대세가 된 이유는?",
+        "description": "프론트엔드 영영의 변화 및 SPA에서 React가 우세하게 된 이유",
+        "date": "2023-07-31",
+        "image": "react.jpg"
+    }
+]
