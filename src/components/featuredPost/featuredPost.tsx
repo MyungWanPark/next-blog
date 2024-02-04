@@ -1,5 +1,5 @@
 import { getPosts } from "@/service/posts";
-import PostCard from "./postCard";
+import PostCard from "../common/postCard";
 
 export default async function FeaturedPost() {
     const postData = await getPosts();

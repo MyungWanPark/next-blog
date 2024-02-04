@@ -1,5 +1,6 @@
 import FeaturedPost from "@/components/featuredPost/featuredPost";
 import Profile from "@/components/profile/profile";
+import MayLikePosts from "@/components/youMayLikePost/posts";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
         <main>
             <Profile />
             <FeaturedPost />
+            <MayLikePosts />
         </main>
     );
 }
