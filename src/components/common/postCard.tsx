@@ -13,7 +13,7 @@ export default function PostCard({ imageSrc, title, desc, date }: Props) {
 
     return (
         <article className="py-2 shadow-md rounded-md">
-            <Link href={`/post/${title}`}>
+            <Link href={`/posts/${encodeURIComponent(title)}`}>
                 <Image
                     src={`${imageDir}/${imageSrc}`}
                     alt={title}

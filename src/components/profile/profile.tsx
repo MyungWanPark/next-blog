@@ -12,7 +12,7 @@ export default function Profile() {
                 height={200}
                 className="rounded-full aspect-square"
             />
-            <h1 className="text-2xl font-bold">Hi, I'm myungwan</h1>
+            <h1 className="text-2xl font-bold">Hi, I&#39;m myungwan</h1>
             <h3 className="text-lg">Full stack engineer</h3>
             <p>유용한 기능을 개발하는 사람</p>
             <Link
