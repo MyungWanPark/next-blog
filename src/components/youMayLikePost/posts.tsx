@@ -3,6 +3,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PostCard from "../common/postCard";
+import posts from "./posts.json";
 
 export default function MayLikePosts() {
     const responsive = {
@@ -27,39 +28,34 @@ export default function MayLikePosts() {
         <section>
             <h1>You May Like</h1>
             <Carousel
-                swipeable={false}
-                draggable={false}
+                swipeable={true}
+                draggable={true}
                 showDots={true}
                 responsive={responsive}
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={1000}
+                autoPlaySpeed={2000}
                 keyBoardControl={true}
                 customTransition="all .5"
                 transitionDuration={500}
-                containerClass="carousel-container"
+                containerClass="carousel-container h-96"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
+                itemClass="carousel-item-padding-40-pxs px-1"
                 deviceType="desktop"
             >
-                {/* {posts.map(({ image, name, description, date }, id) => {
+                {posts.map(({ image, name, description, date }, id) => {
                     return (
-                        <li key={id}>
-                            <PostCard
-                                imageSrc={image}
-                                title={name}
-                                desc={description}
-                                date={date}
-                            />
-                        </li>
+                        <PostCard
+                            imageSrc={image}
+                            title={name}
+                            desc={description}
+                            date={date}
+                            key={id}
+                        />
                     );
-                })} */}
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
+                })}
             </Carousel>
             ;
         </section>
