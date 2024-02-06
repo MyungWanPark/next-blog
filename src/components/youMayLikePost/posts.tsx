@@ -25,8 +25,8 @@ export default function MayLikePosts() {
     };
 
     return (
-        <section>
-            <h1>You May Like</h1>
+        <section className="mt-5">
+            <h1 className="font-bold">You May Like..</h1>
             <Carousel
                 swipeable={true}
                 draggable={true}
@@ -39,10 +39,10 @@ export default function MayLikePosts() {
                 keyBoardControl={true}
                 customTransition="all .5"
                 transitionDuration={500}
-                containerClass="carousel-container h-96"
+                containerClass="carousel-container h-88 !items-start"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-pxs px-1"
+                itemClass="px-1"
                 deviceType="desktop"
             >
                 {posts.map(({ image, name, description, date }, id) => {
