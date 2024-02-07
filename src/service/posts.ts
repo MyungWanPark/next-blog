@@ -6,6 +6,7 @@ type Post = {
     description: string;
     date: string;
     image: string;
+    category: string;
 };
 
 export async function getPosts(): Promise<Post[]> {

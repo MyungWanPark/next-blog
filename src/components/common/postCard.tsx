@@ -6,9 +6,16 @@ type Props = {
     title: string;
     desc: string;
     date: string;
+    category: string;
 };
 
-export default function PostCard({ imageSrc, title, desc, date }: Props) {
+export default function PostCard({
+    imageSrc,
+    title,
+    desc,
+    date,
+    category,
+}: Props) {
     const imageDir = "/images/posts";
 
     return (
@@ -24,6 +31,11 @@ export default function PostCard({ imageSrc, title, desc, date }: Props) {
                 <p className="text-right pr-2 text-sm">{date}</p>
                 <h1 className="text-center font-semibold">{title}</h1>
                 <p className="text-center text-sm">{desc}</p>
+                <div className="flex justify-center my-2">
+                    <span className="text-sm bg-green-500 px-2 rounded-md text-white">
+                        {category}
+                    </span>
+                </div>
             </Link>
         </article>
     );
