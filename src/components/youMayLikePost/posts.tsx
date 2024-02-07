@@ -25,7 +25,7 @@ export default function MayLikePosts() {
     };
 
     return (
-        <section className="mt-5 relative has-[button]:underline">
+        <section className="mt-5 relative">
             <h1 className="font-bold">You May Like..</h1>
             <Carousel
                 swipeable={true}
@@ -39,9 +39,9 @@ export default function MayLikePosts() {
                 keyBoardControl={true}
                 customTransition="all .5"
                 transitionDuration={500}
-                containerClass="carousel-container h-88 !items-start relative [&>*:nth-child(2)]:top-3/7 [&>*:nth-child(3)]:top-3/7"
+                containerClass="carousel-container h-92 !items-start relative [&>*:nth-child(2)]:top-3/7 [&>*:nth-child(3)]:top-3/7"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
+                dotListClass="custom-dot-list-style !-bottom-1"
                 itemClass="px-1"
                 deviceType="desktop"
             >
