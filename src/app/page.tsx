@@ -1,4 +1,4 @@
-import FeaturedPost from "@/components/featuredPost/featuredPost";
+import FeaturedPost from "@/components/post/featuredPost";
 import Profile from "@/components/profile/profile";
 import MayLikePosts from "@/components/youMayLikePost/posts";
 import Image from "next/image";

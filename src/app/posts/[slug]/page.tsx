@@ -1,4 +1,4 @@
-import { getPosts } from "@/service/posts";
+import { Post } from "@/service/posts";
 
 type Props = {
     params: {
@@ -11,7 +11,8 @@ export default function PostPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-    const posts = await getPosts();
+    const response = await fetch("api/posts");
+    const posts: Post[] = await response.json();
 
     return posts.map((post) => ({
         slug: encodeURIComponent(post.name),
