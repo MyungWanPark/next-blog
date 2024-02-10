@@ -17,15 +17,14 @@ export default function PostCard({
     category,
 }: Props) {
     const imageDir = "/images/posts";
-
     return (
-        <article className="py-2 shadow-md rounded-md">
+        <article className="pb-2 shadow-md rounded-md">
             <Link href={`/posts/${encodeURIComponent(title)}`}>
                 <Image
                     src={`${imageDir}/${imageSrc}`}
                     alt={title}
-                    width={800}
-                    height={200}
+                    width={600}
+                    height={300}
                     className="aspect-video rounded-t-md"
                 />
                 <p className="text-right pr-2 text-sm">{date}</p>

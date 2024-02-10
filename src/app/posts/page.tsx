@@ -14,8 +14,9 @@ export type Category =
 export default function PostsPage() {
     const [category, setCategory] = useState<Category>("All Posts");
     console.log("category = ", category);
+
     return (
-        <section className="flex">
+        <section className="flex relative">
             <Posts category={category} />
             <SideNav setCategory={setCategory} />
         </section>
